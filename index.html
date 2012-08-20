@@ -1,0 +1,146 @@
+
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Matt Kennedy Design</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div id="logo">
+    <img src="img/logo.png"/>
+    <a href="index.html">
+      <h1><span title="m">M</span>att <span title="k">K</span>ennedy <span title="word3">Design</span></h1></a>
+      <h5>Freelance Web Developer</h5>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="info">
+      <img src="img/portrait.jpg"/>
+      <div class="leftinfo">
+        My name is Matt Kennedy. <br />
+        I'm a web developer from Hampshire, England.
+      </div>
+      <div class="centerinfo">
+        I love modern web development. <br />
+        I love modern web technology.
+      </div>
+      <div class="rightinfo">
+        I'm looking for clients. <br />
+        See my portfolio below for examples.
+      </div>
+  </div>
+
+  <hr />
+
+  <div id="services">
+     <a class="top" href="#">^Top</a>
+    <h2 class="subheading">What I Offer</h2>
+    <p>I offer the following services for building websites:</p>
+
+    <div class="s_item"><h3>HTML5</h3>
+      The latest version of HTML with better<br /> 
+      standards and cutting edge features.<br /><br/></div>
+    <div class="s_item"><h3>CSS3</h3>
+      The latest version of CSS with improved<br />
+      methods for displying on different devices.<br /><br/></div>
+    <div class="s_item"><h3>jQuery</h3>
+      A JavaScript library which speeds up<br />
+      development for rich web applications.<br /><br/></div>
+    <div class="s_item"><h3>Responsive Web Design</h3>
+      The latest development trend for<br />
+      websites which reform based on screen size.<br />
+      Test it on my site by resizing your browser.</div>
+  </div>
+
+  <hr />
+
+  <div id="portfolio">
+    <a class="top" href="#">^Top</a>
+    <h2 class="subheading">Examples of my work</h2>
+    <div class="leftitem shadow">
+      <a href="../guildwars2"><img src="img/gw2website.jpg"/></a><br />
+      A news website for the game Guild Wars 2.</div>
+    <div class="rightitem shadow">
+      <a href="tapd"><img src="img/tapd.jpg"/></a><br />
+      A jQuery based card game web application.</div>
+    <div class="leftitem shadow">
+      <a href="../joomla"><img src="img/joomla.jpg"/></a><br />
+      A website made with Joomla, a popular content management system.</div>
+    <div class="rightitem shadow">
+      <a href="../forum"><img src="img/forum.jpg"/></a><br />
+      A forum built from scratch.</div>
+  </div>
+
+  <hr />
+
+  <div id="contact">
+    <a class="top" href="#">^Top</a>
+    <h2 class="subheading">Contact Me</h2>
+    <p>If you'd like to discuss a project, use this form to email me, and I'll reply as soon as I can. <br />I can offer a quote for the price and rough time estimates.<br />
+    Or you can <a class="email" href="mailto:mattkennedydesign@gmail.com">email me directly.</a><p>
+    <form method="post" action="email.php">
+      <table>
+        <tr><td>Name:&nbsp;</td> <td><input type="text" id="name" name="name" required /></td></tr>
+        <tr><td>Your Email:&nbsp;</td> <td><input type="email" id="email" name="email" required /></td></tr>
+        <tr><td>Message:&nbsp;</td> <td><textarea rows="8" cols="50" id="text" name="text" required></textarea></td></tr>
+      <tr><td><button>Submit</button></td></tr>
+     </table>
+    </form>
+  </div>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
